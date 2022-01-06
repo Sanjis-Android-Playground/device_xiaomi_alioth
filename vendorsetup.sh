@@ -43,5 +43,8 @@ if [ ! -d "vendor/lunaris-priv/keys" ]; then
     git clone https://github.com/Lunaris-AOSP/vendor_lunaris-priv_keys.git vendor/lunaris-priv/keys
 fi
 
-
+# Clone debugger from royna
+if [ ! -d "hardware/samsung-ext/interfaces" ]; then
+    git clone https://github.com/Roynas-Android-Playground/hardware_samsung-extra_interfaces.git -b lineage-23.2 hardware/samsung-ext/interfaces
+fi
 
