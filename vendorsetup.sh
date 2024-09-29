@@ -14,6 +14,7 @@ git clone git@github.com:Sanjis-Android-Playground/vendor_xiaomi_alioth.git vend
 git clone https://github.com/Roynas-Android-Playground/hardware_samsung-extra_interfaces.git hardware/samsung-ext/interfaces
 rm -rf hardware/xiaomi
 git clone git@github.com:Sanjis-Android-Playground/hardware_xiaomi.git hardware/xiaomi
-git clone https://gitlab.com/johnmart19/vendor_xiaomi_camera.git vendor/xiaomi/camera
+#git clone https://gitlab.com/johnmart19/vendor_xiaomi_camera.git vendor/xiaomi/camera
 rm -rf packages/resources/devicesettings
 git clone git@github.com:Sanjis-Android-Playground/packages_resources_devicesettings.git packages/resources/devicesettings
+git clone https://gitlab.com/dark.phnx12/vendor_xiaomi_camera vendor/xiaomi/camera

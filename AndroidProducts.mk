@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/flare_alioth.mk
+    $(LOCAL_DIR)/pixelage_alioth.mk
