@@ -13,6 +13,9 @@ $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 # Miuicamera
 $(call inherit-product, vendor/xiaomi/camera/miuicamera.mk)
 
+# Singing keys
+$(call inherit-product, vendor/mine/keys.mk)
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
