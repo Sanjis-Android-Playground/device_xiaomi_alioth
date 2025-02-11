@@ -34,6 +34,7 @@ TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GAPPS := true
+$(call inherit-product, vendor/bcr/bcr.mk)
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
