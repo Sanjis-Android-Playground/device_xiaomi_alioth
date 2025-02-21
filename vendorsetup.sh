@@ -4,6 +4,7 @@ base64 -d device/xiaomi/alioth/configs/camera/secret > device/xiaomi/alioth/conf
 
 git clone https://github.com/Sanjis-Android-Playground/device_xiaomi_sm8250-common.git device/xiaomi/sm8250-common
 git clone git@github.com:Sanjis-Android-Playground/kernel_sm8250-16.1.0.git --depth=1 kernel/xiaomi/sm8250
+git clone https://github.com/Sanjivns/keysa15.git vendor/mine
 cd kernel/xiaomi/sm8250
 git submodule init
 git submodule update
