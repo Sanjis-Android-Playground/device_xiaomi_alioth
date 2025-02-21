@@ -1,9 +1,9 @@
 #!/bin/bash
 
 base64 -d device/xiaomi/alioth/configs/camera/secret > device/xiaomi/alioth/configs/camera/st_license.lic
-
+rm -rf device/xiaomi/sm8250-common kernel/xiaomi/sm8250 vendor/mine vendor/xiaomi/sm8250-common vendor/xiaomi/alioth hardware/xiaomi vendor/mine
 git clone https://github.com/Sanjis-Android-Playground/device_xiaomi_sm8250-common.git device/xiaomi/sm8250-common
-git clone git@github.com:Sanjis-Android-Playground/kernel_sm8250-16.1.0.git --depth=1 kernel/xiaomi/sm8250
+git clone https://github.com/Sanjis-Android-Playground/kernel_sm8250-16.1.0.git --depth=1 kernel/xiaomi/sm8250
 git clone https://github.com/Sanjivns/keysa15.git vendor/mine
 cd kernel/xiaomi/sm8250
 git submodule init
@@ -18,3 +18,4 @@ git clone https://github.com/Sanjis-Android-Playground/hardware_xiaomi.git hardw
 git clone https://gitlab.com/johnmart19/vendor_xiaomi_camera.git vendor/xiaomi/camera
 rm -rf packages/resources/devicesettings
 git clone https://github.com/Sanjis-Android-Playground/packages_resources_devicesettings.git packages/resources/devicesettings
+lunch lineage_alioth-ap4a-user
