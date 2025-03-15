@@ -17,3 +17,5 @@ git clone git@github.com:Sanjis-Android-Playground/hardware_xiaomi.git hardware/
 git clone https://gitlab.com/johnmart19/vendor_xiaomi_camera.git vendor/xiaomi/camera
 rm -rf packages/resources/devicesettings
 git clone git@github.com:Sanjis-Android-Playground/packages_resources_devicesettings.git packages/resources/devicesettings
+git clone https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r547379.git prebuilts/clang/host/linux-x86/clang-r547379
+
