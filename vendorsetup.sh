@@ -12,10 +12,10 @@ rm -rf system/extras/su
 git clone git@github.com:Sanjis-Android-Playground/vendor_xiaomi_sm8250-common.git vendor/xiaomi/sm8250-common
 git clone git@github.com:Sanjis-Android-Playground/vendor_xiaomi_alioth.git vendor/xiaomi/alioth
 git clone https://github.com/Roynas-Android-Playground/hardware_samsung-extra_interfaces.git hardware/samsung-ext/interfaces
-rm -rf hardware/xiaomi
+#rm -rf hardware/xiaomi
 git clone git@github.com:Sanjis-Android-Playground/hardware_xiaomi.git hardware/xiaomi
 git clone https://gitlab.com/johnmart19/vendor_xiaomi_camera.git vendor/xiaomi/camera
-rm -rf packages/resources/devicesettings
+#rm -rf packages/resources/devicesettings
 git clone git@github.com:Sanjis-Android-Playground/packages_resources_devicesettings.git packages/resources/devicesettings
 git clone https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r547379.git prebuilts/clang/host/linux-x86/clang-r547379
 
