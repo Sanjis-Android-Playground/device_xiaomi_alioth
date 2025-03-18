@@ -529,4 +529,8 @@
         <item>0</item>
         <item>0</item>
     </integer-array>
+
+    <!-- Whether to play turbulence noise after clicking the play button -->
+     <bool name="config_turbulenceNoise">false</bool>
+
 </resources>
