@@ -31,6 +31,7 @@ AXION_PROCESSOR := Snapdragon_870
 # Define small and big core groups
 AXION_CPU_SMALL_CORES := 0,1,2,3
 AXION_CPU_BIG_CORES := 4,5,6,7
+BYPASS_CHARGE_SUPPORTED := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
