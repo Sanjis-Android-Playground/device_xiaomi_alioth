@@ -63,7 +63,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/pocket/privapp-permissions-pocketmode.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-pocketmode.xml
 
 # Libinit
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_alioth)
+$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):init_xiaomi_alioth)
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30

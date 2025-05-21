@@ -13,6 +13,11 @@
 -->
 <resources>
 
+
+    <!-- Burn-in protection -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
+    <integer name="config_shift_interval">40</integer>
+
     <!-- for 20dp of padding at 2.75px/dp at default density -->
     <dimen name="rounded_corner_content_padding">55px</dimen>
 
