@@ -65,6 +65,7 @@ PRODUCT_COPY_FILES += \
 # Libinit
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_alioth)
 
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 

@@ -8,7 +8,6 @@
 include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/alioth
-
 # Board
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
@@ -17,7 +16,6 @@ TARGET_CAMERA_PACKAGE_NAME := com.android.camera
 
 # Camera - HIDL overrideFormat
 TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT = true
-TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 
 # Display
 TARGET_SCREEN_DENSITY := 420

@@ -9,11 +9,11 @@ git submodule init
 git submodule update
 cd ../../../
 rm -rf system/extras/su
-git clone git@github.com:Sanjis-Android-Playground/vendor_xiaomi_sm8250-common.git vendor/xiaomi/sm8250-common
-git clone git@github.com:Sanjis-Android-Playground/vendor_xiaomi_alioth.git vendor/xiaomi/alioth
+git clone git@github.com:Sanjis-Android-Playground/vendor_xiaomi_sm8250-common.git -b 15-qpr2 vendor/xiaomi/sm8250-common
+git clone git@github.com:Sanjis-Android-Playground/vendor_xiaomi_alioth.git -b 15-qpr2 vendor/xiaomi/alioth
 git clone https://github.com/Roynas-Android-Playground/hardware_samsung-extra_interfaces.git hardware/samsung-ext/interfaces
-#rm -rf hardware/xiaomi
-git clone git@github.com:Sanjis-Android-Playground/hardware_xiaomi.git hardware/xiaomi
+rm -rf hardware/xiaomi
+git clone git@github.com:Sanjis-Android-Playground/hardware_xiaomi.git -b 15-qpr2 hardware/xiaomi
 git clone https://gitlab.com/johnmart19/vendor_xiaomi_camera.git vendor/xiaomi/camera
 #rm -rf packages/resources/devicesettings
 git clone git@github.com:Sanjis-Android-Playground/packages_resources_devicesettings.git packages/resources/devicesettings
