@@ -11,6 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+$(call inherit-product, vendor/avium/config/avium.mk)
+
+AVIUM_BUILDTYPE = Unoffical
+# GMS
+WITH_GMS = false
+# If WITH_GMS is true and GMS_TYPE is not set, it will default to CORE
+GMS_TYPE = CORE
+
+AVIUM_MAINTAINER = sanji
+
 # Inherit Camera-related flags
 TARGET_USES_MIUI_CAMERA := true
 TARGET_INCLUDES_MIUI_CAMERA := true

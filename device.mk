@@ -10,9 +10,6 @@ TARGET_IS_VAB := true
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
-# Miuicamera
-$(call inherit-product, vendor/xiaomi/camera/miuicamera.mk)
-
 # Singing keys
 $(call inherit-product, vendor/mine/keys.mk)
 
@@ -36,8 +33,6 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     libpiex_shim
 
-# Miui Camera
-include device/xiaomi/camera/miuicamera.mk
 
 # Miui Camera STLicense
 PRODUCT_COPY_FILES += \
