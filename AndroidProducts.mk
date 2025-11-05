@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_alioth.mk
+    $(LOCAL_DIR)/xperience_alioth.mk
