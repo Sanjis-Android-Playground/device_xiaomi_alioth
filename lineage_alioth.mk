@@ -18,7 +18,7 @@ TARGET_INCLUDES_MIUI_CAMERA := true
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
 
-TARGET_INCLUDE_REVANCED := true
+TARGET_INCLUDE_REVANCED := false
 
 PRODUCT_NAME := lineage_alioth
 PRODUCT_DEVICE := alioth
@@ -35,3 +35,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=POCO/alioth_global/alioth:13/TKQ1.221114.001/V816.0.3.0.TKHMIXM:user/release-keys \
     DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
+
+TARGET_SUPPORTED_REFRESH_RATES := 60,120
+WITH_GMS := true

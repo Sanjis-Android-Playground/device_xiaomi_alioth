@@ -4,7 +4,7 @@ base64 -d device/xiaomi/alioth/configs/camera/secret > device/xiaomi/alioth/conf
 
 # Clone kernel_xiaomi_sm8250
 if [ ! -d "kernel/xiaomi/alioth" ]; then
-    git clone https://github.com/Meow-prjkt/android_kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250 --depth 1
+    git clone https://github.com/Sanjis-Android-Playground/android_kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250
 fi
 
 # Clone hardware_xiaomi
@@ -25,7 +25,7 @@ fi
 
 # Clone packages_apps_GameBar
 if [ ! -d "packages/apps/GameBar" ]; then
-    git clone https://github.com/zen0s-aospforge/packages_apps_GameBar packages/apps/GameBar -b main
+    git clone https://github.com/Sanjis-Android-Playground/packages_apps_GameBar.git  packages/apps/GameBar/
 fi
 
 # Clone vendor_xiaomi_camera
@@ -36,6 +36,11 @@ fi
 # Clone device_xiaomi_camera
 if [ ! -d "device/xiaomi/camera" ]; then
     git clone https://github.com/PocoF3Releases/device_xiaomi_camera device/xiaomi/camera -b aosp-16 --depth 1
+fi
+
+# Clone vendor_lunaris-priv_keys
+if [ ! -d "vendor/infinity-priv/keys" ]; then
+    git clone https://github.com/Lunaris-AOSP/vendor_lunaris-priv_keys.git vendor/lunaris-priv/keys
 fi
 
 
