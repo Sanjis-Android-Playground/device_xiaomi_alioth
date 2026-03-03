@@ -6453,7 +6453,6 @@
          <boolean name="carrier_vt_available_bool" value="true" />
          <boolean name="carrier_wfc_ims_available_bool" value="true" />
          <boolean name="editable_enhanced_4g_lte_bool" value="true" />
-</carrier_config>
     </carrier_config>
     <carrier_config mcc="440" mnc="10">
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
