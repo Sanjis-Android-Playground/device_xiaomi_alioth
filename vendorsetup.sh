@@ -3,7 +3,7 @@
 base64 -d device/xiaomi/alioth/configs/camera/secret > device/xiaomi/alioth/configs/camera/st_license.lic
 
 # Clone kernel_xiaomi_sm8250
-if [ ! -d "kernel/xiaomi/alioth" ]; then
+if [ ! -d "kernel/xiaomi/sm8250" ]; then
     git clone https://github.com/Sanjis-Android-Playground/android_kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250
 fi
 
@@ -39,16 +39,9 @@ if [ ! -d "device/xiaomi/camera" ]; then
 fi
 
 # Clone vendor_lunaris-priv_keys
-if [ ! -d "vendor/infinity-priv/keys" ]; then
+if [ ! -d "vendor/lunaris-priv/keys" ]; then
     git clone https://github.com/Lunaris-AOSP/vendor_lunaris-priv_keys.git vendor/lunaris-priv/keys
 fi
 
 
-# Apply Binder threadpool patch
-if [ -d "system/libhwbinder" ]; then
-    cd system/libhwbinder
-    git fetch https://github.com/custom-crdroid/system_libhwbinder.git d9d46e78cec0d09498fd5890eed9f7195baed0fd
-    git cherry-pick d9d46e78cec0d09498fd5890eed9f7195baed0fd || git cherry-pick --abort
-    cd - > /dev/null
-fi
 
