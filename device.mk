@@ -37,6 +37,11 @@ $(call soong_config_set,libcameraservice,ext_lib,libcameraservice_extension.sm82
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+ifneq ($(TARGET_BUILD_VARIANT),user)
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.usb.config=mtp,adb
+endif
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
