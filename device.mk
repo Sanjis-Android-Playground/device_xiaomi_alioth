@@ -109,6 +109,9 @@ endif
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-$(VULKAN_DEQP_LEVEL).xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+
 # A/B
 ifeq ($(TARGET_IS_VAB),true)
 PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
