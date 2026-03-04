@@ -203,6 +203,7 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/props/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor_phone.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/props/system_ext.prop
 
 # Recovery
 ifeq ($(TARGET_IS_VAB),true)
