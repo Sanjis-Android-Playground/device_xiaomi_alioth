@@ -9,3 +9,5 @@ allow init adsprpcd_file:file mounton;
 
 # Charge bypass - input_suspend node
 allow init vendor_sysfs_battery_supply:file rw_file_perms;
+
+allow init vendor_configs_file:file mounton;
