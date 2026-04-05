@@ -37,4 +37,29 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
 TARGET_SUPPORTED_REFRESH_RATES := 60,120
-WITH_GMS := true
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_AXFX := true
+AXION_MAINTAINER := sanji
+AXION_CAMERA_REAR_INFO := 48,8,5
+AXION_CAMERA_FRONT_INFO := 20
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := schedutil
+PERF_ANIM_OVERRIDE := false
+# GPU
+GPU_FREQS_PATH := /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies
+GPU_MIN_FREQ_PATH := /sys/class/kgsl/kgsl-3d0/min_clock_mhz
+
+# High Brightness Mode (HBM)
+HBM_SUPPORTED := true
+HBM_NODE := /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm
+
+# Flashlight strength
+TORCH_STR_SUPPORTED := false
+
+# doze fix
+# for devices with doze/sensor related issues 
+TARGET_NEEDS_DOZE_FIX := false
+
+# Charging
+BYPASS_CHARGE_SUPPORTED := true
+TARGET_IS_LOW_RAM := false

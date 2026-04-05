@@ -98,6 +98,8 @@
 
     <bool name="config_dozeDoubleTapSensorAvailable">true</bool>
 
+    <string name="config_dozeDoubleTapSensorType" translatable="false">org.lineageos.sensor.double_tap</string>
+
     <bool name="config_supports_double_tap_ambient" translatable="false">true</bool>
 
     <!-- True if the display hardware only has brightness buckets rather than a full range of
@@ -812,4 +814,9 @@
 
     <!-- System Info -->
     <integer name="config_sysCPUTempMultiplier">1000</integer>
+    <!-- The list of package IDs that are allowed to skip camera high frame rate checks. -->
+    <string-array name="config_cameraHFRPrivAppList" translatable="false">
+        <item>com.android.camera</item>
+    </string-array>
+
 </resources>

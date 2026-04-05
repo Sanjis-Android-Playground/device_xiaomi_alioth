@@ -5,7 +5,9 @@
 #
 # A/B
 TARGET_IS_VAB := true
-
+$(call soong_config_set,lineage_health,fast_charge_node,/sys/class/qcom-battery/restrict_chg)
+$(call soong_config_set,lineage_health,fast_charge_value_none,1)
+$(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -26,7 +28,7 @@ PRODUCT_PACKAGES += \
 include device/xiaomi/camera/miuicamera.mk
 
 #Signing keys
-$(call inherit-product, vendor/lunaris-priv/keys/keys.mk)
+#$(call inherit-product, vendor/lunaris-priv/keys/keys.mk)
 
 # Miui Camera STLicense
 PRODUCT_COPY_FILES += \

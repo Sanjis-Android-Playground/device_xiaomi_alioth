@@ -94,3 +94,4 @@
 # Graphics
 /sys/class/drm/card0-DSI-1/disp_param                                                               u:object_r:vendor_sysfs_graphics:s0
 
+/dev/xiaomi-touchfeature    u:object_r:vendor_touchfeature_device:s0
