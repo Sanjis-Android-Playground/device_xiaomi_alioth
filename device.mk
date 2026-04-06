@@ -26,7 +26,7 @@ PRODUCT_PACKAGES += \
 include device/xiaomi/camera/miuicamera.mk
 
 #Signing keys
-$(call inherit-product, vendor/lunaris-priv/keys/keys.mk)
+#$(call inherit-product, vendor/matrixx-priv/keys/keys.mk)
 
 # Miui Camera STLicense
 PRODUCT_COPY_FILES += \

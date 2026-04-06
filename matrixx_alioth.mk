@@ -9,18 +9,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/matrixx/config/common_full_phone.mk)
 
 # Inherit Camera-related flags
 TARGET_USES_MIUI_CAMERA := true
 TARGET_INCLUDES_MIUI_CAMERA := true
+MATRIXX_BUILD_TYPE := Official
 
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
 
 TARGET_INCLUDE_REVANCED := false
 
-PRODUCT_NAME := lineage_alioth
+PRODUCT_NAME := matrixx_alioth
 PRODUCT_DEVICE := alioth
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
@@ -38,3 +39,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 TARGET_SUPPORTED_REFRESH_RATES := 60,120
 WITH_GMS := true
+MATRIXX_MAINTAINER := ꜱᴀɴᴊɪ | サンジ
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+WITH_GMS_COMMS_SUITE := true
+WITH_BCR := true
+
