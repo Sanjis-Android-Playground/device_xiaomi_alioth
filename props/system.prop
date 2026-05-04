@@ -78,3 +78,4 @@ persist.vendor.sys.memplus.enable=false
 ro.vendor.qti.sys.fw.bg_apps_limit=30
 ro.vendor.qti.sys.fw.bservice_limit=60
 
+persist.vendor.fastrpc.log_level=0
