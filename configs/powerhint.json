@@ -511,13 +511,13 @@
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 1000,
-      "Value": "9999999"
+      "Value": "1286400"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "CPUBigPlusClusterMinFreq",
       "Duration": 1000,
-      "Value": "9999999"
+      "Value": "1190400"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
@@ -529,7 +529,7 @@
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 1000,
-      "Value": "9999999"
+      "Value": "1075200"
     },
     {
       "PowerHint": "CAMERA_STREAMING_MID",
