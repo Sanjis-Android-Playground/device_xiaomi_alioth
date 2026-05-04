@@ -4,7 +4,7 @@ base64 -d device/xiaomi/alioth/configs/camera/secret > device/xiaomi/alioth/conf
 
 # Clone kernel_xiaomi_sm8250
 if [ ! -d "kernel/xiaomi/sm8250" ]; then
-    git clone https://github.com/Sanjis-Android-Playground/android_kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250
+    git clone https://github.com/Sanjis-Android-Playground/android_kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250 --depth=1 -b main-bpf
 fi
 
 # Clone hardware_xiaomi
