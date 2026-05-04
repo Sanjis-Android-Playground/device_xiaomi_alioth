@@ -685,13 +685,13 @@
       "PowerHint": "CAMERA_SHOT",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 1000,
-      "Value": "9999999"
+      "Value": "1286400"
     },
     {
       "PowerHint": "CAMERA_SHOT",
       "Node": "CPUBigPlusClusterMinFreq",
       "Duration": 1000,
-      "Value": "9999999"
+      "Value": "1190400"
     },
     {
       "PowerHint": "CAMERA_SHOT",
@@ -703,7 +703,7 @@
       "PowerHint": "CAMERA_SHOT",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 1000,
-      "Value": "9999999"
+      "Value": "1075200"
     },
     {
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
