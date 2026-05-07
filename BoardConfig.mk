@@ -19,7 +19,7 @@ TARGET_SCREEN_DENSITY := 440
 include hardware/samsung-ext/interfaces/sepolicy/SEPolicy.mk
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/xiaomi/alioth.config
+TARGET_KERNEL_CONFIG += vendor/alioth_defconfig
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := alioth,aliothin
