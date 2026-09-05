@@ -4,7 +4,7 @@ base64 -d device/xiaomi/alioth/configs/camera/secret > device/xiaomi/alioth/conf
 
 # Clone kernel_xiaomi_sm8250
 if [ ! -d "kernel/xiaomi/sm8250" ]; then
-    git clone https://github.com/Sanjis-Android-Playground/android_kernel_xiaomi_sm8250.git kernel/xiaomi/sm8250 -b main-bpf --depth=1
+   git clone https://github.com/Sanjis-Android-Playground/kernel_sm8250.git kernel/xiaomi/sm8250 --depth 1
 fi
 cd kernel/xiaomi/sm8250
 git submodule init
@@ -33,7 +33,7 @@ fi
 
 # Clone vendor_xiaomi_alioth
 if [ ! -d "vendor/xiaomi/sm8250-common" ]; then
-    git clone https://github.com/Sanjis-Android-Playground/vendor_xiaomi_sm8250-common.git vendor/xiaomi/sm8250-common -b aosp-16
+    git clone https://github.com/Sanjis-Android-Playground/vendor_xiaomi_sm8250-common.git vendor/xiaomi/sm8250-common -b lunaris
 fi
 
 # Clone packages_apps_GameBar
