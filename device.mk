@@ -49,6 +49,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/tunings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/tunings.txt
 
+# Wi-Fi
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/wifi/qca6390/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6390/WCNSS_qcom_cfg.ini
+
+PRODUCT_PACKAGES += \
+    firmware_WCNSS_qcom_cfg_qca6390.ini_symlink \
+    firmware_wlan_mac_qca6390.bin_symlink
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlayDevice \
