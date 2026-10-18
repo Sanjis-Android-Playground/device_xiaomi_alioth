@@ -45,6 +45,10 @@ include device/xiaomi/camera/miuicamera.mk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/st_license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/st_license.lic
 
+# VPP tunings
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/tunings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/tunings.txt
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlayDevice \
