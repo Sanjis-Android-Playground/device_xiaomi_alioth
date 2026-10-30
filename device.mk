@@ -7,7 +7,7 @@
 # A/B
 TARGET_IS_VAB := true
 
-# Alioth uses the AW8697 haptic motor with the RichTap (AAC) HAL.
+# Alioth uses the AW8697 legacy input-effect ABI.
 TARGET_USES_AW8697_VIBRATOR := true
 
 # Inherit from sm8250-common

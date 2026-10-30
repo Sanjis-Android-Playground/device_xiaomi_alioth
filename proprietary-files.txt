@@ -506,9 +506,6 @@ vendor/etc/thermald-devices.conf
 vendor/firmware/aw8697_haptic.bin
 vendor/firmware/aw8697_rtp_1.bin
 
-# Vibrator RichTap (AAC) userspace
-odm/etc/aac_richtap.config
-
 # Vibrator primitive waveforms (byte-exact stock RAM slices)
 vendor/etc/vibrator/primitive_effect_1.bin
 vendor/etc/vibrator/primitive_effect_2.bin
