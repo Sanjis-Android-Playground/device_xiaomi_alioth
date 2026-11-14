@@ -72,7 +72,6 @@ PRODUCT_PACKAGES += \
     LineageSettingsOverlayDevice \
     LineageSystemUIOverlayDevice \
     SettingsOverlayDevice \
-    CustomSystemUIOverlayDevice \
     SystemUIOverlayDevice
 
 # Set Default Device name according to MIUI
