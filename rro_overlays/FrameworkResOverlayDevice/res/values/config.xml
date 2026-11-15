@@ -550,4 +550,10 @@
     <!-- Specifies the maximum burn-in offset vertically. -->
     <integer name="config_burnInProtectionMaxVerticalOffset">40</integer>
 
+    <!-- Pocket Lock
+         The ultrasound proximity sensor is driven through the audio HAL, which
+         holds a wakelock every time the framework enables it. Constant polling
+         also makes the MIUS HAL return errors from poll(). -->
+    <bool name="config_pocketModeSupported">false</bool>
+
 </resources>
