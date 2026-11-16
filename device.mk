@@ -13,6 +13,9 @@ TARGET_USES_AW8697_VIBRATOR := true
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
+# NotGameTurbo
+$(call inherit-product, packages/apps/NotGameTurbo/notgameturbo.mk)
+
 #Signing keys
 $(call inherit-product, vendor/lunaris-priv/keys/keys.mk)
 
