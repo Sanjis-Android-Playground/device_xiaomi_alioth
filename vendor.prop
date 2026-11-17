@@ -70,7 +70,6 @@ ro.vendor.video.decode.only=false
 ro.vendor.whitepoint_calibration_enable=false
 vendor.hbm.enable=true
 ro.vendor.display.truetone.enable=true
-ro.vendor.display.sunlight.enable=true
 ro.vendor.display.doze_brightness.enable=true
 
 # Fingerprint
